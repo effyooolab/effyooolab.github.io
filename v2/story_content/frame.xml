@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="Speechace test_PromptMic" />
+              <option name="title_text" value="Speechace test_ver 7" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -1574,8 +1574,9 @@
       <links>
         <slidelink slideid="_player.6q5uqddkjt4" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
-            <slidelink slideid="_player.6q5uqddkjt4.5lf4MmQ2VRI" displaytext="Instruction slide" expand="false" type="slide" />
-            <slidelink slideid="_player.6q5uqddkjt4.6m5exCtk5RP" displaytext="Question" expand="false" type="slide" />
+            <slidelink slideid="_player.6q5uqddkjt4.6m5exCtk5RP" displaytext="Cow" expand="false" type="slide" />
+            <slidelink slideid="_player.6q5uqddkjt4.6lDZbBMbnNK" displaytext="Duck" expand="false" type="slide" />
+            <slidelink slideid="_player.6q5uqddkjt4.6GrppowDNXr" displaytext="Pork" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>
