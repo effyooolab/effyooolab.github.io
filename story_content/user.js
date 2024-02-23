@@ -111,35 +111,17 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6fiKZIAQSLN":
+      case "5ojQPee6q84":
         Script1();
         break;
-      case "5zuYbHfYdnc":
+      case "6Up3yMzGY22":
         Script2();
         break;
-      case "6flPzek8qHH":
+      case "5fZVpIfH7xD":
         Script3();
         break;
-      case "6FfmaZDG9RE":
+      case "5lsgcDXBp55":
         Script4();
-        break;
-      case "6G3lsp1YKXQ":
-        Script5();
-        break;
-      case "6l4n4hWltOi":
-        Script6();
-        break;
-      case "67BtfQzbsJN":
-        Script7();
-        break;
-      case "5r1hdS6lCRr":
-        Script8();
-        break;
-      case "5vMnagYJLxC":
-        Script9();
-        break;
-      case "6bQwO3fu63G":
-        Script10();
         break;
   }
 }
@@ -148,162 +130,25 @@ function Script1()
 {
   console.log("Recording starts");
   startRecording();
-
 }
 
 function Script2()
 {
-  console.log("Recording stop");
+  console.log("Recording stops");
   stopRecording();
+
 }
 
 function Script3()
 {
-  var object = document.querySelectorAll("[data-acc-text='audio']"); 
-gsap.fromTo(object,.4, { visible:true,
-      scale:1.4,
-}, {
-      scale:1,
-      //ease: RoughEase.ease,
-      //ease: Elastic.easeOut,
-      //ease: Elastic.easeOut.config(1.75, 1),
-      yoyo: true
-  });
+  console.log("Recording starts");
+  startRecording();
 }
 
 function Script4()
 {
-  var object = document.querySelectorAll("[data-acc-text='next']"); 
-gsap.fromTo(object,.4, { visible:true,
-      scale:1.4,
-}, {
-      scale:1,
-      //ease: RoughEase.ease,
-      //ease: Elastic.easeOut,
-      //ease: Elastic.easeOut.config(1.75, 1),
-      yoyo: true
-  });
-}
+  console.log("Recording stop");
+  stopRecording();
 
-function Script5()
-{
-  var object = document.querySelectorAll("[data-acc-text='go']"); 
-gsap.fromTo(object,.4, { visible:true,
-      scale:1.4,
-}, {
-      scale:1,
-      //ease: RoughEase.ease,
-      //ease: Elastic.easeOut,
-      //ease: Elastic.easeOut.config(1.75, 1),
-      yoyo: true
-  });
-}
-
-function Script6()
-{
-  var object = document.querySelectorAll("[data-acc-text='retry']"); 
-gsap.to(object, { 
-scale: 1.25,
-  opacity: 20,
-  duration: 0.8, ease: "expo.out",
-  stagger: {
-    each: 0.2,
-    repeat: -1
-  }
-});
-}
-
-function Script7()
-{
-  var input_state = 1;
-
-function load_default_state() {
-    var certFilename = 'result-screen.html';
-    // HTMLCollection of elements of type iFrame
-    var iframeElements = document.getElementsByTagName("iframe");
-    // Iterate over the iFrameElements HTMLCollection
-    for (var i = 0; i < iframeElements.length; i++) {
-        /* If src of current iFrame element equals the filename set in variable
-            ** certFilename call the generatePDF() function.
-            */
-        var src = iframeElements[i].getAttribute('src');
-        if (src.indexOf(certFilename) != -1) {
-            if (typeof iframeElements[i].contentWindow.change_state !== 'undefined' && typeof iframeElements[i].contentWindow.is_rive_loaded !== 'undefined') {
-            	if (iframeElements[i].contentWindow.is_rive_loaded == true) {
-            		iframeElements[i].contentWindow.change_state(input_state);
-	                console.log("loaded done!");
-	                return;
-            	}
-            }
-        }
-    }
-
-    window.setTimeout(load_default_state, 200);
-}
-
-load_default_state()
-}
-
-function Script8()
-{
-  var object = document.querySelectorAll("[data-acc-text='retry']"); 
-gsap.to(object, { 
-scale: 1.25,
-  opacity: 20,
-  duration: 0.8, ease: "expo.out",
-  stagger: {
-    each: 0.2,
-    repeat: -1
-  }
-});
-}
-
-function Script9()
-{
-  var input_state = 3;
-
-function load_default_state() {
-    var certFilename = 'result-screen.html';
-    // HTMLCollection of elements of type iFrame
-    var iframeElements = document.getElementsByTagName("iframe");
-    // Iterate over the iFrameElements HTMLCollection
-    for (var i = 0; i < iframeElements.length; i++) {
-        /* If src of current iFrame element equals the filename set in variable
-            ** certFilename call the generatePDF() function.
-            */
-        var src = iframeElements[i].getAttribute('src');
-        if (src.indexOf(certFilename) != -1) {
-            if (typeof iframeElements[i].contentWindow.change_state !== 'undefined' && typeof iframeElements[i].contentWindow.is_rive_loaded !== 'undefined') {
-            	if (iframeElements[i].contentWindow.is_rive_loaded == true) {
-            		iframeElements[i].contentWindow.change_state(input_state);
-	                console.log("loaded done!");
-	                return;
-            	}
-            }
-        }
-    }
-
-    window.setTimeout(load_default_state, 200);
-}
-
-load_default_state()
-}
-
-function Script10()
-{
-  // Name of the certificate html file
-var certFilename = 'progress-bar.html';
-// HTMLCollection of elements of type iFrame
-var iframeElements = document.getElementsByTagName("iframe");
-// Iterate over the iFrameElements HTMLCollection
-for(var i = 0; i < iframeElements.length; i++){
-/* If src of current iFrame element equals the filename set in variable
-    ** certFilename call the generatePDF() function.
-    */
-var src = iframeElements[i].getAttribute('src');
-if (src.indexOf(certFilename) !=-1) {
-        iframeElements[i].contentWindow.fireup();
-    }
- }
 }
 
